@@ -61,11 +61,12 @@ def initial_interface():
         "Both Dacus and Bridgers had opened for Baker on separate tours in 2016, and they all ran in similar circles as young up-and-coming performers navigating the indie scene.")
         print("Baker had joked to Dacus years before about a “pipe dream” that they could one day all form a band.", "The three decided to book a co-headlining tour in early 2018, and they originally planned to record a single or a cover so that they could perform something together on stage.", 
         "Upon meeting up that summer, however, they found themselves overwhelmed with ideas, and they ended up forming the band, writing, recording, and self-producing the Boygenius EP in four days, with the process involving almost exclusively women.")
+        print("They recently reunited with their debut album titled 'the record' and are currently in their own tour!")
         loop()
 
     if choice == '2':
         print("The members of boygenius are Phoebe Bridgers, Julien Baker, and Lucy Dacus.")
-        print("Whould you like to learn more about them? [Type yes/no]")
+        print("Would you like to learn more about them? [Type yes/no]")
         second_choice = input()
 
         if second_choice == 'yes':
@@ -96,7 +97,7 @@ def initial_interface():
         loop()
     
     if choice == '4':
-        print("Hi! I'm a beginner at programming and coding in general. From what you can tell, I'm just a fan that is still learning.", 
+        print("Hi! I'm not much of a programming fiend but I am making my way into the field of Data Science. From what you can tell, I'm just a fan that is still learning.", 
         "Should you find any errs or misinformation in my little directory, feel free to contact me.", "Furthermore, all is used for educational purposes.")
         loop()
 
