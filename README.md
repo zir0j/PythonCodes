@@ -20,7 +20,11 @@ Simple programming projects using Python made in fulfillment of short courses at
     <td>A small program that gives you small insights about Boygenius, the suergroup composed of Lucy Dacus, Julien Baker, and Phoebe Bridgers</td>
   </tr>
   <tr>
-    <td>rock paper scissors</td>
+    <td>Rock Paper Scissors</td>
     <td>A simple game of Rock, Paper, Scissors!</td>
+  </tr>
+  <tr>
+    <td>Random Number Guesser!</td>
+    <td>Can you see if Python can guess your number?</td>
   </tr>
 </table>
