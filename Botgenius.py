@@ -17,7 +17,8 @@ lucy_dacus_disc = dict(zip(lucy_dacus_albums,lucy_dacus_year))
 def phoebe_bridgers():
     print("According to Wikipedia, Phoebe Bridgers (born August 17, 1994) is an American singer, songwriter, guitarist and record producer.",
     "She was born and raised in Pasadena, California. She was formerly a member of Sloppy Jane before releasing her debut album",
-    "'Stranger in the Alps.' She also recently released her sophomore album, 'Punisher' which got her nominated as", "Best New Artist at the 2020 Grammys")
+    "'Stranger in the Alps.' She also recently released her sophomore album, 'Punisher' which got her nominated as", "Best New Artist at the 2020 Grammys.",
+    "For 2024, she won four Grammy awards with three being from their Boygenius album title The Record", "and her collaboration with SZA titled Ghost in the Machine.")
     print("DISCOGRAPHY:", phoebe_bridgers_disc)
 
 def julien_baker():
@@ -61,7 +62,7 @@ def initial_interface():
         "Both Dacus and Bridgers had opened for Baker on separate tours in 2016, and they all ran in similar circles as young up-and-coming performers navigating the indie scene.")
         print("Baker had joked to Dacus years before about a “pipe dream” that they could one day all form a band.", "The three decided to book a co-headlining tour in early 2018, and they originally planned to record a single or a cover so that they could perform something together on stage.", 
         "Upon meeting up that summer, however, they found themselves overwhelmed with ideas, and they ended up forming the band, writing, recording, and self-producing the Boygenius EP in four days, with the process involving almost exclusively women.")
-        print("They recently reunited with their debut album titled 'the record' and are currently in their own tour!")
+        print("They recently reunited with their debut album titled 'the record' and won their Grammy awards for Best Alternative Music Album, Best Rock Song, and Best Rock Performance!")
         loop()
 
     if choice == '2':
@@ -97,8 +98,8 @@ def initial_interface():
         loop()
     
     if choice == '4':
-        print("Hi! I'm not much of a programming fiend but I am making my way into the field of Data Science. From what you can tell, I'm just a fan that is still learning.", 
-        "Should you find any errs or misinformation in my little directory, feel free to contact me.", "Furthermore, all is used for educational purposes.")
+        print("Hi! I'm currently a computer science grad student from the Philippines! Hope you liked the code I made in 2022.", 
+        "Should you find any errs or misinformation in my little directory, feel free to contact me.", "All is used for educaitonal purposes.", "Please do check my portfolio ceejmartinez.crd.co for more of my work.")
         loop()
 
     else:
