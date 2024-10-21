@@ -1,6 +1,3 @@
-# Simple Proogramming projects
-Simple programming projects using Python made in fulfillment of short courses attended.
-
 **Projects in Repository**
 <table>
   <tr>
