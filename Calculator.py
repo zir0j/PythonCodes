@@ -1,53 +1,79 @@
-# Operations
+def calculator():
 
-def add(x, y):
-    return x + y
+    def calculator_inputs():
+        while True:
+            try:
+                x = float(input("Enter first number: "))  # Get first number
+                y = float(input("Enter second number: "))  # Get second number
+                calculator_menu(x, y)  # Pass inputs to menu
+                break  # Exit the loop after one round of inputs and operations
+            except ValueError:
+                print("Invalid input. Try again.")
+    
+    def calculator_menu(x, y):
+        while True:
+            print("\n1. Addition")
+            print("2. Subtraction")
+            print("3. Multiplication")
+            print("4. Division")
+            print("5. Exponentiation")
+            print("0. Exit")
+            
+            try:
+                user_input = int(input("\nEnter your choice: "))  # Get operation choice
+                
+                if user_input == 1:
+                    print(f"The sum of {x} and {y} is {addition(x, y)}")
+                elif user_input == 2:
+                    print(f"The difference between {x} and {y} is {subtraction(x, y)}")
+                elif user_input == 3:
+                    print(f"The product of {x} and {y} is {multiplication(x, y)}")
+                elif user_input == 4:
+                    quotient, remainder = division(x, y)
+                    print(f"The quotient of {x} and {y} is {quotient} and the remainder is {remainder}")
+                elif user_input == 5:
+                    print(f"{x} raised to {y} is {exponentiation(x, y)}")
+                elif user_input == 0:
+                    return  # Exit the menu, terminating the program
+                else:
+                    print("Invalid choice. Try again.")
+                
+            except ValueError:
+                print("Invalid input. Please enter a valid choice.")
+    
+    def addition(x, y):
+        return x + y
 
-def subtract(x, y):
-    return x - y
+    def subtraction(x, y):
+        return x - y
 
-def multiply(x, y):
-    return x * y
+    def multiplication(x, y):
+        if x == 0 or y == 0:
+            return 0
+        product = 0
+        for _ in range(int(y)):  # Loop b times
+            product = addition(product, a)
+        return product
 
-def divide(x, y):
-    return x / y
+    def division(x, y):
+        if y == 0:
+            return "undefined", 0  # Handle division by zero
+        quotient = 0
+        while x >= y:
+            x = subtraction(x, y)
+            quotient += 1
+        remainder = x  # The leftover a is the remainder
+        return quotient, remainder
 
-#What will be printed
-print("Hello! Do you wanna do some math?")
-initial_response = input("yes/no: ")
-if initial_response == "yes":
-    print("Select operation.")
-    print("1.Add")
-    print("2.Subtract")
-    print("3.Multiply")
-    print("4.Divide")
+    def exponentiation(x, y):
+        if y == 0:
+            return 1  # Any number raised to power 0 is 1
+        result = x
+        for _ in range(int(y) - 1):  # Loop b-1 times
+            result = multiplication(result, x)
+        return result
 
-    while True:
-        # Choices for the user
-        choice = input("Enter choice(1/2/3/4): ")
+    calculator_inputs()  # Start the calculator
 
-        # Conditions and Outputs
-        if choice in ('1', '2', '3', '4'):
-            num1 = float(input("Enter first number: "))
-            num2 = float(input("Enter second number: "))
 
-            if choice == '1':
-                print(num1, "+", num2, "=", add(num1, num2))
-
-            elif choice == '2':
-                print(num1, "-", num2, "=", subtract(num1, num2))
-
-            elif choice == '3':
-                print(num1, "/", num2, "=", divide(num1, num2))
-
-            elif choice == '4':
-                print(num1, "/", num2, "=", multiply(num1, num2))
-      
-            next_calculation = input("Let's do next calculation? (yes/no): ")
-            if next_calculation == "no":
-                print("Okay! See you next time!")
-                break
-        
-        else:
-            print("Invalid Input")
-
+calculator()
